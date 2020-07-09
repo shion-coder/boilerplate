@@ -1,17 +1,7 @@
-import { createGlobalStyle, keyframes } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
 /* -------------------------------------------------------------------------- */
-
-const fadeIn = keyframes`
-  from {
-      opacity: 0;
-  }
-
-  to {
-      opacity: 1;
-  }
-`;
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize}
@@ -26,7 +16,6 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: sans-serif;
-    animation: ${fadeIn} 1s ease;
   }
 
   a {
